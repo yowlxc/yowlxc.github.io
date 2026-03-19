@@ -16,6 +16,9 @@ nav:
   - Главная: index.md
   - Обо мне: about.md
   - Мои проекты: projects.md
+  - Лабораторные работы:
+      - Лабораторная №1: labs/lab1.md
+      - Лабораторная №2: labs/lab2.md
   - Мои контакты: contacts.md
   
 
