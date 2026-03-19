@@ -1,0 +1,340 @@
+/* ===== НЕЖНО-ЛИЛОВАЯ ТЕМА ===== */
+/* Полностью скругленные углы, мягкие тени, пастельные тона */
+
+:root {
+  /* Основные цвета палитры */
+  --neon-lilac-light: #faf5ff;    /* Самый светлый фон */
+  --neon-lilac-soft: #f3e8ff;      /* Основной нежно-лиловый */
+  --neon-lilac-mist: #e9d5ff;      /* Чуть насыщеннее */
+  --neon-lilac-petal: #d9b3ff;     /* Акцентный, но нежный */
+  --neon-lilac-lavender: #c084fc;   /* Для кнопок и ссылок */
+  --neon-lilac-deep: #a855f7;       /* Для текста при наведении */
+  --neon-lilac-dark: #7e22ce;       /* Темно-лиловый для заголовков */
+  
+  /* Переопределение цветов Material */
+  --md-primary-fg-color: #b690e0;        /* Основной цвет темы */
+  --md-primary-fg-color--light: #d9b3ff; /* Светлая версия */
+  --md-primary-fg-color--dark: #8b5cf6;  /* Темная версия */
+  --md-primary-bg-color: #ffffff;         /* Текст на цветном фоне */
+  --md-accent-fg-color: #c084fc;          /* Акцент (ссылки при наведении) */
+  
+  /* Цвета текста */
+  --md-typeset-color: #3a2a4a;            /* Основной текст */
+  --md-typeset-a-color: #8b5cf6;           /* Ссылки */
+  
+  /* Фоны */
+  --md-default-bg-color: var(--neon-lilac-light);
+  --md-code-bg-color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== ОСНОВНОЙ ФОН ===== */
+body {
+  background: linear-gradient(145deg, #faf5ff 0%, #f3e8ff 100%);
+  min-height: 100vh;
+}
+
+/* ===== НАВИГАЦИЯ (ШАПКА) ===== */
+.md-header {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-radius: 60px !important;
+  margin: 15px auto !important;
+  width: calc(100% - 40px) !important;
+  max-width: 1200px;
+  left: 20px !important;
+  right: 20px !important;
+  box-shadow: 0 15px 40px -15px rgba(170, 120, 220, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease;
+}
+
+/* Элементы в шапке */
+.md-header__inner {
+  padding: 0.6rem 1.8rem !important;
+  border-radius: 60px;
+}
+
+.md-header__title {
+  font-weight: 450;
+  color: #6d4e8d;
+}
+
+/* Поиск */
+.md-search__form {
+  border-radius: 40px !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+}
+
+/* ===== ВКЛАДКИ НАВИГАЦИИ ===== */
+.md-tabs {
+  background: transparent !important;
+  border-radius: 60px;
+  color: #4a3860;
+}
+
+.md-tabs__link {
+  border-radius: 40px !important;
+  font-size: 0.85rem;
+  font-weight: 450;
+  padding: 0.4rem 1rem !important;
+  margin: 0 0.1rem;
+  transition: all 0.2s ease;
+  color: #5d4b77 !important;
+  border: 1px solid transparent;
+}
+
+.md-tabs__link:hover {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border-color: #d9b3ff;
+  transform: scale(1.02);
+}
+
+.md-tabs__link--active {
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: #7b3bb3 !important;
+  font-weight: 500;
+}
+
+/* ===== ОСНОВНОЙ КОНТЕЙНЕР ===== */
+.md-main__inner {
+  margin-top: 0.8rem;
+}
+
+.md-content {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 40px !important;
+  padding: 2rem 2.5rem !important;
+  box-shadow: 0 20px 40px -15px rgba(170, 120, 220, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.md-content:hover {
+  box-shadow: 0 25px 50px -15px rgba(170, 120, 220, 0.25);
+}
+
+/* ===== ЗАГОЛОВКИ ===== */
+.md-content h1 {
+  color: #6b3fa0;
+  font-weight: 550;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  border-left: 8px solid #d9b3ff;
+  padding-left: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.md-content h2 {
+  color: #7b4ca8;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(201, 160, 255, 0.4);
+  padding-bottom: 0.6rem;
+  margin-top: 2rem;
+}
+
+.md-content h3 {
+  color: #8f63b4;
+  font-weight: 450;
+}
+
+/* ===== ТЕКСТ И ССЫЛКИ ===== */
+.md-content p {
+  color: #3d3352;
+  font-weight: 320;
+  line-height: 1.7;
+}
+
+.md-content a {
+  color: #9d6ed3;
+  text-decoration: none;
+  border-bottom: 1px dashed #d9b3ff;
+  transition: all 0.2s ease;
+}
+
+.md-content a:hover {
+  color: #7b3bb3;
+  border-bottom-style: solid;
+}
+
+/* ===== СПИСКИ ===== */
+.md-content ul, .md-content ol {
+  padding-left: 1.2rem;
+}
+
+.md-content li {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 30px !important;
+  padding: 0.8rem 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+  list-style-type: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease;
+}
+
+.md-content li:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateX(8px);
+  border-color: #d9b3ff;
+  box-shadow: 0 5px 12px rgba(190, 140, 240, 0.15);
+}
+
+/* Маркеры списков делаем красивыми */
+.md-content li::before {
+  content: "🌸";
+  margin-right: 10px;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* ===== КОД ===== */
+.md-content code {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px !important;
+  padding: 0.2rem 0.8rem !important;
+  border: 1px solid #f0e4ff;
+  color: #895fc6;
+  font-size: 0.9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.md-content pre code {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 30px !important;
+  padding: 1.5rem !important;
+  border: 1px solid white;
+}
+
+/* ===== ТАБЛИЦЫ ===== */
+.md-content table {
+  border-radius: 30px !important;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.md-content th {
+  background: rgba(217, 179, 255, 0.3);
+  color: #5b3a7c;
+  font-weight: 500;
+}
+
+.md-content td, .md-content th {
+  padding: 0.8rem 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* ===== БЛОКИ ЦИТАТ ===== */
+.md-content blockquote {
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.4);
+  border-left: 8px solid #d9b3ff;
+  padding: 1.2rem 1.8rem;
+  color: #5b4a6b;
+}
+
+/* ===== БОКОВАЯ ПАНЕЛЬ (ОГЛАВЛЕНИЕ) ===== */
+.md-sidebar {
+  border-radius: 30px;
+}
+
+.md-sidebar__inner {
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 1.2rem 0.8rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Элементы оглавления */
+.md-nav__item .md-nav__link {
+  border-radius: 40px !important;
+  padding: 0.4rem 1.2rem !important;
+  transition: all 0.2s ease;
+  color: #5d4b77;
+}
+
+.md-nav__item .md-nav__link:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: #8a5fc0;
+}
+
+.md-nav__item .md-nav__link--active {
+  background: rgba(255, 255, 255, 0.8);
+  color: #a855f7 !important;
+  font-weight: 500;
+}
+
+/* ===== КНОПКИ ===== */
+.md-button {
+  border-radius: 60px !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  padding: 0.6rem 2rem !important;
+  box-shadow: 0 8px 20px -8px rgba(170, 120, 220, 0.3);
+}
+
+.md-button--primary {
+  background: linear-gradient(145deg, #d9b3ff, #c59aff) !important;
+  color: #492e66 !important;
+}
+
+.md-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 25px -8px #c59aff !important;
+}
+
+/* ===== ПОДВАЛ ===== */
+.md-footer {
+  border-radius: 60px 60px 0 0;
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* ===== СКРОЛЛБАР ===== */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(230, 210, 250, 0.3);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9b3ff;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+}
+
+/* ===== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ===== */
+@media screen and (max-width: 600px) {
+  .md-content {
+    padding: 1.5rem !important;
+    border-radius: 30px !important;
+  }
+  
+  .md-header {
+    width: calc(100% - 20px) !important;
+    left: 10px !important;
+    right: 10px !important;
+    border-radius: 40px !important;
+  }
+  
+  .md-content h1 {
+    font-size: 1.8rem;
+  }
+}
