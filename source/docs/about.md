@@ -9,9 +9,9 @@
 
 ## Осваиваемые курсы
 
-- "Программирование на Python"
-- "Программирование на C++" 
-- "Deep Learning"
+- Программирование на Python
+- Программирование на C++"
+- Deep Learning
 
 ![alt text](jpg-memes/locked-in.jpg)
 
