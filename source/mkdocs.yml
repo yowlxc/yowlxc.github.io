@@ -1,0 +1,26 @@
+site_name: Портофолио Пироговой Анастасии 
+site_url: https://yowlxc.github.io/
+site_author: Pirogova Anastasia
+copyright: Pirogova Anastasia, yowlxc, 2026
+
+theme:
+  name: material
+  palette:
+    primary: deep purple
+    accent: purple
+  features:
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Главная: index.md
+  - Обо мне: about.md
+  - Мои проекты: projects.md
+  - Лабораторные работы:
+      - Лабораторная №1: labs/lab1.md
+      - Лабораторная №2: labs/lab2.md
+  - Мои контакты: contacts.md
+  
+
+
+
