@@ -1,4 +1,4 @@
-# Статический сайт-порфтолио, созданный с помощью MkDocs и GitHub Pages
+# Статический сайт-порфтолио, созданный с помощью MkDocs
 
 Для сайта использована тема Material for MkDocs, поскольку она имеет ряд преимуществ:
 - Современный визуал
@@ -7,4 +7,6 @@
 - Простота использования
 - Простота кастомизации
 
-Ссылка на сайт: [https://yowlxc.github.io/](https://yowlxc.github.io/)
+Ссылка на сайт: 
+- GitHub Pages: [https://yowlxc.github.io/](https://yowlxc.github.io/)
+- SourceCraft: [https://natsyapirogova.sourcecraft.site/python-3lab/](https://natsyapirogova.sourcecraft.site/python-3lab/)

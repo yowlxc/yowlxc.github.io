@@ -9,6 +9,7 @@ theme:
     primary: deep purple
     accent: purple
   features:
+    - content.code.copy 
     - search.suggest
     - search.highlight
 

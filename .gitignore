@@ -3,6 +3,8 @@
 
 # Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
 .venv
+package-loch.json
+package.json
 _site/
 .sass-cache/
 .jekyll-cache/
