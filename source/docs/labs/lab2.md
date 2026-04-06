@@ -14,7 +14,7 @@
 
 ## Код 
 
-Ссылка на репозиторий - [github.com/yowlxc/2sem-python-itmo/tree/main/lab2](https://github.com/yowlxc/2sem-python-itmo/tree/main/lab2https://github.com/yowlxc/2sem-python-itmo/tree/main/lab2)
+Ссылка на репозиторий - [github.com/yowlxc/2sem-python-itmo/lab2](https://github.com/yowlxc/2sem-python-itmo/tree/main/lab2)
 
 ## Выводы
 
